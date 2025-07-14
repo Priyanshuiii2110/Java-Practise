@@ -1,0 +1,48 @@
+import java.util.Arrays;
+import java.util.Scanner;
+public class array {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+       //input 
+        int [][] arr = new int[3][4];
+for( int row=0;row<arr.length;row++){
+    for(int col =0;col<arr[row].length;col++){
+arr[row][col]= sc.nextInt();
+    }
+
+// }
+
+// output
+
+// for( row=0;row<arr.length;row++){
+//     for(int col =0;col<arr[row].length;col++){
+// System.out.print(Arrays.toString(arr));
+//     }
+// System.out.println();
+// }
+ 
+// for( row=0;row<arr.length;row++){
+//  System.out.println(arr[row] );   
+// }
+
+//enchance for loop
+// int arr[] = {1,2,3,4,5};
+// for(int a : arr){
+//     System.out.print(a);
+// }
+// arr [2] = 5;
+
+for(int[] a:arr){
+    System.out.println(Arrays.toString(a));
+}
+
+
+
+
+
+sc.close();
+    }
+    
+}
+}
